@@ -67,6 +67,9 @@ body{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
+.menu_icon a{
+display: none;
+}
 .download_cv a{
     color: white;
     font-size: 1.5rem;
@@ -84,11 +87,7 @@ body{
     box-shadow: 0 0 10px var(--main-color);
 }
 
-#menu-icon{
-    font-size: 3.6rem;
-    color: var(--main-color);
-    display: none;
-}
+
 section{
     min-height: 100vh;
     padding: 10rem 12% 10rem;
@@ -327,7 +326,7 @@ span{
     color: var(--main-color);
 }
 .aboutMe p{
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     text-align: center;
 
 }
@@ -628,6 +627,25 @@ footer{
     border-bottom: 3px solid var(--main-color);
 }
 
+
+.callMe a{
+    position: fixed;
+    right: 40px;
+    bottom: 70px;
+        padding: 9px;
+        align-items: center;
+        width: 4.5rem;
+        height: 4.5rem;
+        background: transparent;
+        border: 2px solid var(--main-color);
+        font-size: 2rem;
+        border-radius: 50%;
+        color: var(--main-color);
+        margin: 3rem 1.5rem 3rem 0;
+        transition: 0.3s ease-in;
+
+}
+
 @media(max-width: 500px){
     html{
         font-size: 55%;
@@ -637,7 +655,8 @@ footer{
         
     }
     .header{
-        padding: 20px 20px;
+        padding: 30px 20px 10px;
+        height: 50px;
     }
     .home .home_image{
         display: none;
@@ -704,6 +723,7 @@ footer{
     .Mycontact{
         flex-direction: column;
         padding: 0;
+        gap: 10px;
     }
     .information p{
         font-size: 1.2rem;
@@ -723,12 +743,21 @@ footer{
     .text-Box textarea{
         width: 100%;
     }
+    .text-Box .btn{
+        box-shadow: 0 0 15px var(--main-color);
+    }
     .previousBar{
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
         padding-bottom: 10px;
+    }
+    .social-icons{
+        margin-bottom: 20px;
+    }
+    .social-icons a{
+        margin: 1rem 1rem;
     }
     .previousBar a{
         margin: 0;
@@ -738,6 +767,14 @@ footer{
         :hover{
             border: 1px solid var(--main-color);
         }
+    }
+    .p_l_part1{
+        height: 40px;
+        display: flex;
+        gap: 6px;
+    }
+    .text-Box{
+        gap: 20px;
     }
     footer{
         padding: 5px;
@@ -771,6 +808,32 @@ footer{
         margin: 3rem 0;
         color: white;
     }
-
+    .menu_icon a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 4.5rem; */
+        /* height: 4.5rem; */
+        background: transparent;
+        /* border: 2px solid var(--main-color); */
+        font-size: 2rem;
+        border-radius: 50%;
+        color: var(--main-color);
+        margin: 3rem 1.5rem 3rem 0;
+        transition: 0.3s ease-in;
+    }
+    .Education{
+        gap: 50px;
+    }
+    .menu_icon a:nth-child(-n+1){
+        font-size: 2.2rem;
+    }
+    .callMe a{
+        border: none;
+        right: 0;
+        margin-right: 0;
+        bottom: 25px;
+        padding-bottom: 4px;
+    }
     
 }
