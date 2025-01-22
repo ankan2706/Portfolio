@@ -6,14 +6,19 @@
     <title>MyPortfolio Ankan</title>
     <link rel="shortcut icon" type="x-icon" href="./icon-iamge.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
         <a href="#home" class="logo">Ankan <span>Bera .</span></a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
-
+        <div class="menu_icon">
+            <a href="#home"><i class='bx bx-home'></i></a>
+            <a href="#about"><i class="fa-solid fa-eye"></i></a>
+            <a href="#skills&project"><i class="fa-solid fa-shield"></i></a>
+            <a href="#contact"><i class='bx bxs-contact' ></i></a>
+        </div>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -52,7 +57,9 @@
             <div class="Education">
                 <div class="aboutMe">
                     <h1>About Me</h1>
-                    <p>I am currently pursuing a Bachelor of Science degree from Midnapore College (Autonomous). Alongside my academic pursuits, I am deeply passionate about exploring new places and traveling, which allows me to experience diverse cultures and landscapes. I also enjoy staying active and healthy by regularly going to the gym. These interests help me maintain a balanced and vibrant lifestyle, complementing my educational journey.</p>
+                    <p>I am an intermediate web developer with a solid foundation in HTML, CSS, and JavaScript, along with a growing proficiency in backend development using Node.js and Express.js. Additionally, I have some experience with React for building dynamic user interfaces.
+
+                      <br>  Known for my strong work ethic and dedication to improving my skills, I enjoy creating functional, visually appealing, and responsive websites. I am always eager to learn new technologies and take on challenging projects, striving to deliver creative and high-quality results.</p>
                     <a href="./CV of ankan bera.pdf" download="AnkanBeraCV" class="btnCV">Download CV</a>
                 </div>
                 <div class="Myeducation">
@@ -153,14 +160,18 @@
                 <h1>Projects</h1>
                 <div class="project-list games">
                     <h2>Games</h2>
-                    <span>Tic-Tac-Tow</span>
+                    <div class="p_l_part1">
+                        <span>Tic-Tac-Tow</span>
                     <span>Rock-Paper-Scissor</span>
+                    </div>
                 </div>
                 <div class="project-list website">
                     <h2>Website Clone</h2>
-                    <span>Amazon</span>
-                    <span>Netflix</span>
-                    <span>My college website</span>
+                    <div class="p_l_part1">
+                        <span>Amazon</span>
+                        <span>Netflix</span>
+                        <span>My college website</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,6 +208,10 @@
                 </div>    
         </div>
       </section>
+
+      <div class="callMe">
+        <a href="tel:+917810937299"><i class="fa-solid fa-phone"></i></a>
+      </div>
       <footer>
         <div class="previousBar">
             <a href="#home" class="active">Home</a>
