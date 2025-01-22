@@ -635,4 +635,7 @@ footer{
     .navbar{
         display: none;
     }
+    .home .home_image{
+        display: none;
+    }
 }
