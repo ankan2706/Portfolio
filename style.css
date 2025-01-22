@@ -619,3 +619,20 @@ footer{
     letter-spacing: 4px;
     padding-top: 20px;
 }
+
+
+@media(max-width:601px){
+    html{
+        font-size: 55%;
+    }
+    .logo{
+        font-size: 2rem;
+        
+    }
+    .header{
+        padding: 20px 20px;
+    }
+    .navbar{
+        display: none;
+    }
+}
