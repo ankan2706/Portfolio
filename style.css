@@ -324,6 +324,7 @@ span{
 .aboutMe h1{
     
     font-size: 2.5rem;
+    color: var(--main-color);
 }
 .aboutMe p{
     font-size: 1.9rem;
@@ -380,6 +381,7 @@ span{
     font-size: 1.8rem;
     padding-bottom: 10px;
     text-align: center;
+    color: #f9204f;
 }
 .edu p{
     font-size: 1.4rem;
@@ -598,20 +600,9 @@ span{
     margin: auto;
     resize: none;
 }
-.previousBar a{
-    font-size: 1.5rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-    font-weight: 600;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
-}
-.previousBar a:hover{
-    color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
-}
+
 footer{
-    height: 50px;
+    height: 100%px;
     width: 100%;
     background-color: var(--second-bg-color);
     text-align: center;
@@ -620,7 +611,24 @@ footer{
     padding-top: 20px;
 }
 
-@media(max-width:375px){
+.previousBar{
+    padding-bottom: 20px;
+}
+.previousBar a{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    
+}
+.previousBar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+@media(max-width: 500px){
     html{
         font-size: 55%;
     }
@@ -630,9 +638,6 @@ footer{
     }
     .header{
         padding: 20px 20px;
-    }
-    .navbar{
-        display: none;
     }
     .home .home_image{
         display: none;
@@ -669,4 +674,103 @@ footer{
     .EducationalQualification{
         flex-direction: column;
     }
+    .skills_project .heading{
+        font-size: 3rem;
+    }
+    .skillProject{
+        flex-direction: column;
+    }
+    .skills{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .skill-box-head{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .skill-box{
+        width: 100%;
+    }
+    .project{
+        width: 100%;
+    }
+    .project-list{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .contact h1{
+        font-size: 3.5rem;
+    }
+    .Mycontact{
+        flex-direction: column;
+        padding: 0;
+    }
+    .information p{
+        font-size: 1.2rem;
+    }
+    .information p span{
+        font-size: 1.4rem;
+    }
+    .border2{
+        display: none;
+    }
+    .findMeInsocialMedia{
+        width: 100%;
+    }
+    .findMeInsocialMedia .social-icons{
+        padding: 0;
+    }
+    .text-Box textarea{
+        width: 100%;
+    }
+    .previousBar{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding-bottom: 10px;
+    }
+    .previousBar a{
+        margin: 0;
+        /* padding-right: 8px; */
+        letter-spacing: normal;
+        color: rgb(126, 125, 125);
+        :hover{
+            border: 1px solid var(--main-color);
+        }
+    }
+    footer{
+        padding: 5px;
+    
+        font-size: 1.1rem;
+    }
+
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+    .navbar .active{
+        display: block;
+
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+
+    
 }
